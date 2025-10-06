@@ -3,33 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Extratos Bancários</title>
+    <title>Extrato Rápido - Converta Extratos PDF para Excel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="src/assets/css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Conversor de Extratos Bancários</h1>
-        <p>Converta seus extratos em PDF para planilhas Excel (CSV) facilmente.</p>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Extrato Rápido</a>
+            <nav class="nav-links">
+                <a href="#planos">Planos</a>
+                <a href="#">Entrar</a>
+                <a href="#" class="btn btn-outline">Cadastre-se Grátis</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="upload-section">
-            <h2>1. Faça o upload do seu arquivo</h2>
-            <p>Selecione o extrato bancário em formato PDF.</p>
-            <input type="file" id="file-input" accept=".pdf">
-            <button id="upload-button">Converter Arquivo</button>
+        <section class="section-hero">
+            <div class="container text-center">
+                <h1>Transforme seus extratos PDF em planilhas Excel em segundos.</h1>
+                <p class="subtitle">Organize suas finanças de forma inteligente. Envie seu arquivo e deixe a mágica acontecer.</p>
+                
+                <div class="upload-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="upload-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    <p><strong>Arraste e solte seu arquivo aqui</strong> ou clique para selecionar</p>
+                    <button class="btn btn-primary">Selecionar Arquivo PDF</button>
+                </div>
+            </div>
         </section>
 
-        <section class="result-section">
-            <h2>2. Baixe sua planilha</h2>
-            <p>O download começará automaticamente após a conversão.</p>
+        <section class="section-steps">
+            <div class="container text-center">
+                <h2>Como funciona? É simples.</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span>1</span>
+                        <h3>Envie seu Extrato</h3>
+                        <p>Faça o upload do seu extrato bancário em formato PDF de forma segura.</p>
+                    </div>
+                    <div class="step-card">
+                        <span>2</span>
+                        <h3>Aguarde a Conversão</h3>
+                        <p>Nossa tecnologia analisa e extrai todas as transações em instantes.</p>
+                    </div>
+                    <div class="step-card">
+                        <span>3</span>
+                        <h3>Baixe sua Planilha</h3>
+                        <p>Receba um arquivo Excel (XLS/CSV) limpo e organizado, pronto para usar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="section-pricing">
+            <div class="container text-center">
+                <h2>Planos flexíveis para todas as necessidades</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Anônimo</h3>
+                        <p class="price">Grátis</p>
+                        <ul>
+                            <li>✓ 1 conversão por dia</li>
+                            <li>✓ Sem necessidade de cadastro</li>
+                            <li>✓ Suporte comunitário</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline full-width">Começar Agora</a>
+                    </div>
+                    <div class="pricing-card highlighted">
+                        <span class="badge">Mais Popular</span>
+                        <h3>Cadastro Grátis</h3>
+                        <p class="price">Grátis</p>
+                        <ul>
+                            <li>✓ 5 conversões por dia</li>
+                            <li>✓ Histórico de arquivos</li>
+                            <li>✓ Suporte por e-mail</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary full-width">Criar Conta Grátis</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <p class="price">R$ 19,90<small>/mês</small></p>
+                        <ul>
+                            <li>✓ Assine para converter mais documentos</li>
+                            
+                        </ul>
+                        <a href="#" class="btn btn-outline full-width">Assinar Premium</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Seu Nome ou Nome da Empresa. Todos os direitos reservados.</p>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Extrato Rápido. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
     </footer>
 
     <script src="src/assets/js/main.js"></script>
