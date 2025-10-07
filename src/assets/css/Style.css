@@ -251,3 +251,86 @@ h2 {
 .footer-links a:hover {
     color: var(--cor-primaria);
 }
+
+/* --- Estilos para Telas Pequenas (Design Responsivo) --- */
+/* As regras dentro deste bloco só serão aplicadas em telas com largura máxima de 768px (tablets e celulares). */
+
+@media (max-width: 768px) {
+
+    /* --- Ajustes Gerais --- */
+    body {
+        /* Melhora a legibilidade em telas pequenas */
+        line-height: 1.6;
+    }
+
+    .container {
+        /* Garante que o conteúdo não cole nas bordas da tela */
+        padding: 0 15px;
+    }
+
+    /* --- Ajustes de Tipografia --- */
+    h1 {
+        /* Reduz o tamanho do título principal para caber melhor na tela */
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        /* Reduz o tamanho dos títulos de seção */
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* --- Ajustes no Cabeçalho (Navbar) --- */
+    .navbar .container {
+        /* Empilha o logo e os links de navegação verticalmente */
+        flex-direction: column;
+        gap: 1rem; /* Adiciona um espaço entre o logo e os links */
+    }
+
+    .nav-links {
+        /* Centraliza os links quando empilhados */
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+    
+    .nav-links a {
+        /* Reduz a margem entre os links */
+        margin-left: 1rem;
+    }
+
+
+    /* --- Ajustes no Layout Principal --- */
+    .section-hero,
+    .section-steps,
+    .section-pricing {
+        /* Diminui o espaçamento vertical excessivo em telas pequenas */
+        padding: 3rem 0;
+    }
+    
+    .upload-box {
+        padding: 1.5rem;
+    }
+
+    /* --- A MÁGICA PRINCIPAL ACONTECE AQUI --- */
+    .steps-grid,
+    .pricing-grid {
+        /* Transforma os grids de 3 colunas em 1 coluna */
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Ajustes no Rodapé (Footer) --- */
+    .main-footer .container {
+        /* Empilha o texto de copyright e os links */
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .footer-links a {
+        margin: 0 0.5rem;
+    }
+}
